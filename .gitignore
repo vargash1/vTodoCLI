@@ -1,0 +1,10 @@
+vTodoCLI.egg-info/*
+build/*
+dist/*
+*.pyc
+*.swp
+*.log
+*.aux
+*.tex
+*.pdf
+.env

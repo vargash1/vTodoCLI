@@ -5,7 +5,7 @@
 # @Email:  vargash1@wit.edu
 # @Name :  Vargas, Hector
 # @Last modified by:   vargash1
-# @Last modified time: Tuesday, April 5th 2016, 6:15:03 am
+# @Last modified time: Friday, April 15th 2016, 12:39:59 am
 import os
 from setuptools import setup
 
@@ -23,5 +23,6 @@ setup(
     url = "https://github.com/vargash1/vTodoCLI",
     packages = ['vtodocli'],
     package_dir = {'vtodocli':'vtodocli'},
+    package_data = {'vtodocli':['.env']},
     long_description = read('README.md')
 )

@@ -5,7 +5,7 @@
 # @Email:  vargash1@wit.edu
 # @Name :  Vargas, Hector
 # @Last modified by:   vargash1
-# @Last modified time: Friday, April 15th 2016, 12:39:59 am
+# @Last modified time: Friday, April 15th 2016, 5:40:37 am
 import os
 from setuptools import setup
 
@@ -24,5 +24,10 @@ setup(
     packages = ['vtodocli'],
     package_dir = {'vtodocli':'vtodocli'},
     package_data = {'vtodocli':['.env']},
-    long_description = read('README.md')
+    long_description = read('README.md'),
+    entry_points = {
+        'console_scripts':[
+            'vTodoCLI=vtodocli.vTodoCLI:main',
+        ],
+    }
 )
